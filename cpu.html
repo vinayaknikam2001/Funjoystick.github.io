@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic_tac_toe</title>
+    <link rel="stylesheet" href="styles/tic_tac_toe.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="board">
+            <div class="cell" id="cell1" onclick = "cell1()" ontouchstart = "cell1()">__</div>
+            <div class="cell" id="cell2" onclick = "cell2()" ontouchstart = "cell2()">__</div>
+            <div class="cell" id="cell3" onclick = "cell3()" ontouchstart = "cell3()">__</div>
+            <div class="cell" id="cell4" onclick = "cell4()" ontouchstart = "cell4()">__</div>
+            <div class="cell" id="cell5" onclick = "cell5()" ontouchstart = "cell5()">__</div>
+            <div class="cell" id="cell6" onclick = "cell6()" ontouchstart = "cell6()">__</div>
+            <div class="cell" id="cell7" onclick = "cell7()" ontouchstart = "cell7()">__</div>
+            <div class="cell" id="cell8" onclick = "cell8()" ontouchstart = "cell8()">__</div>
+            <div class="cell" id="cell9" onclick = "cell9()" ontouchstart = "cell9()">__</div>
+        </div>
+        <div id="game_over">
+            <div id ="over"></div>
+            <a href="tictactoe.html"><div id="play_again" onclick="play_again()" ontouchstart="play_again()">Play Again</div></a>
+        </div>
+    </div>
+
+    
+    <script src="scripts/cpu.js"></script>
+</body>
+
+</html>

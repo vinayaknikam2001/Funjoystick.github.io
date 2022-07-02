@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Mania</title>
+    <link rel="stylesheet" href="styles/snake.css">
+    <style>
+        #joystick{
+
+            height: 200px;
+            width: 200px;
+            background-image: url("img/Snake_Mania/btn.png");
+            background-repeat: no-repeat;
+            margin-top: 10px;
+			background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="main_body">
+        
+        <div id ="score_board">Score : 0</div>
+        <div id="msg" ontouchstart="get_ready()" onclick="get_ready()">Click anywhere to <br> continue..</div>
+        <div id="gameover" ontouchstart="game_over()" onclick="game_over()">Game Over !<br> Click anywhere to play again</div>
+        <div id ="game_board"></div>    
+    </div>
+
+    
+    <div id="controls">
+        <div id="joystick">
+            <div class="btn1" id="btn" ontouchstart="up()"></div>
+            <div class="btn2" id="btn" ontouchstart="right()"></div>
+            <div class="btn3" id="btn" ontouchstart="left()"></div>
+            <div class="btn4" id="btn" ontouchstart="down()"></div>
+        </div>
+    </div>
+	
+	<script src="scripts/snake.js"></script>
+    
+    
+</body>
+</html>

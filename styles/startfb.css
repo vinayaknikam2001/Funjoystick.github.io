@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: radial-gradient(circle ,rgb(117, 172, 218) ,rgb(55, 85, 114) ,rgb(0, 31, 65));
+}
+#mainbody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+#btn{
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    width: 100px;
+    position: absolute;
+    top: 455px;
+}
+#btn2{
+    height: 63px;
+    width: 100px;
+    position: absolute;
+}
+#canvas{
+    border: solid;
+    border-radius: 12px;
+}

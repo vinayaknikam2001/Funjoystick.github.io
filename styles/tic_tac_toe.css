@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image: radial-gradient(circle ,rgb(70, 131, 180) ,rgb(22, 73, 117) ,rgb(25, 2, 46));
+}
+
+#main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    display: grid;
+    border: 2px solid;
+    border-radius:  12px;
+    height: 97vmin;
+    width: 97vmin;
+    background-color: slategrey;
+    grid-template-columns: 32.4vmin 32.4vmin 32.4vmin;
+    filter: blur(3px);
+    /*https://www.w3schools.com/howto/howto_css_blurred_background.asp */
+}
+.cell{
+    display: inline-grid;
+    color: rgb(40, 5, 71);
+    border: 2px solid black;
+    border-radius: 12px;
+    text-align: center;
+    align-items: center;
+    font-size: 25vmin;
+    font-style: italic;
+    padding: 0%;
+    /* https://www.w3schools.com/css/css_grid.asp */
+}
+#start{
+    display: flex;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: rgba(125, 230, 84, 0.4);
+    height: 85vmin;
+    width: 60vmin;
+    position: absolute;
+    z-index: 5;
+}
+#title{
+    display: flex;
+    font-size: 10vmin;
+    width: 80vmin;
+    margin-left: 6vmin;
+    margin-top: 5vmin;
+    color: black;
+}
+#play{
+    display: flex;
+    font-size: 5vmin;
+    position: absolute;
+    top: 50vmin;
+    left: 23vmin;
+    border: 2px solid;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgb(57, 170, 199);
+}
+#play:hover{
+    color: white;
+    background-color: black;
+    border-color: lawngreen;
+}
+#game_over{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(125, 230, 84, 0.4);
+    height: 85vmin;
+    width: 60vmin;
+    color: black;
+    font-size: 8vmin;
+    position: absolute;
+    justify-content: center;
+}
+
+#play_again{
+   display: flex;
+    font-size: 5vmin;
+    position: absolute;
+    top: 50vmin;
+    left: 17vmin;
+    border: 2px solid;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgb(57, 170, 199);
+}
+#play_again:hover{
+    color: white;
+    background-color: black;
+    border-color: lawngreen;
+}
+#cpu{
+    display: flex;
+    font-size: 5vmin;
+    position: absolute;
+    top: 60vmin;
+    left: 13.5vmin;
+    border: 2px solid;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgb(57, 170, 199);
+}
+a{
+    color: black;
+}
+#cpu:hover{
+    color: white;
+    background-color: black;
+    border-color: lawngreen;
+}

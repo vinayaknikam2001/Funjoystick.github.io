@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+
+    <style>
+        .joystick {
+            height: 50vmin;
+            width: 70vmin;
+            background-image: url("img/joystick.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .joystick:hover {
+            background-image: url("img/dark-joystick.png");
+        }
+
+        @media screen and (max-width: 750px) {
+            div#list {
+                display: none;
+            }
+
+            div#open {
+                display: flex;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Navbar starts -->
+    <!-- Secondary Navbar -->
+    <div id="navbar2">
+        <div id="icon2"><a href="home.html" style="color:white;">FunJoystick</a></div>
+        <ul id="nav2">
+            <div id="list2">
+                <div class="items2">
+                    <li><a href="home.html" class="items2">Home</a></li>
+                </div>
+                <div class="items2">
+                    <li><a href="playgames.html" class="items2">Play Games</a></li>
+                </div>
+                <div class="items2">
+                    <li><a href="downloads.html" class="items2">Downloads</a></li>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <!-- Primary Navbar -->
+    <div id="navbar">
+
+        <label for="" id="icon"><a href="home.html" class="esports" style="color:white;">FunJoystick</a></label>
+
+        <ul id="nav">
+            <div id="list">
+                <div>
+                    <li><a href="home.html" class="items">Home</a></li>
+                </div>
+                <div>
+                    <li><a href="playgames.html" class="items">Play Games</a></li>
+                </div>
+                <div>
+                    <li><a href="downloads.html" class="items">Downloads</a></li>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+
+    <!-- Open menu -->
+    <div id="open" onclick="openMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Close menu -->
+    <div id="close" onclick="closeMenu()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+    </div>
+
+    <a href="home.html"><img src="img/dark-joystick.png" alt="website icon" id="logo"></a>
+    <!-- Navbar ends -->
+
+
+
+    <!-- Page elements -->
+    <div id="elements">
+        <div class="joystick"></div>
+
+        <div id="quote">
+            Keep Calm <br> & Game On !
+        </div>
+    </div>
+    <!-- Ending page elements -->
+    <script src="scripts/navbar.js"></script>
+</body>
+
+</html>

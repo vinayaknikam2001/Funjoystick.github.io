@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: radial-gradient(circle ,rgb(70, 131, 180) ,rgb(55, 85, 114) ,rgb(40,60,80));
+}
+#mainbody{
+    display: flex;
+    justify-content: center;
+}
+
+#canvas{
+    border: 3px solid;
+    display: flex;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+#left{
+
+    display: flex;
+    position: absolute;
+    left: 0px;
+    height: 94%;
+    width: 45%;
+}
+#right{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 94%;
+    width: 45%;
+}
+#play_again{
+    position: absolute;
+    top: 430px;
+    height: 45px;
+    width: 150px;
+    display: none;
+}
